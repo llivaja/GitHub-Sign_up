@@ -20,8 +20,8 @@
         background-color: #fafbfc;
         border-radius: 4px;
         height: 494px;
-        margin: 30px auto auto;
-        padding: 20px 0px 0px;
+        margin: 30px auto;
+        padding-top: 20px;
         width: 295px;
       }
 
@@ -30,10 +30,10 @@
       }
 
       label {
-        color: #616971;
+        color: #586069;
         font-size: 14px;
         line-height: 1.5;
-        text-align: left;
+        text-align: left; 
       }
 
       input {
@@ -44,9 +44,14 @@
         padding: 14px 10px;
         margin: 5px 0 13px 0;
         font-size: 16px;
-        width: 92%;
+        width: 244px;
+
       }
 
+      input:last-of-type{
+        margin-bottom: 0px;
+      }
+      
       input:focus {
         border-color: #2188ff;
         outline: none;
@@ -57,13 +62,13 @@
       }
 
       a {
-        color: #3886de;
+        color: #0366d6;
         text-decoration: none;
       }
 
       p {
         font-size: 12px;
-        margin: 7px 0 0 0;
+        margin-top: 7px;
         text-align: justify;
       }
 
@@ -77,10 +82,9 @@
         background-color: #2ebc4f;
         color: white;
         cursor: pointer;
-        display: block;
         font-size: 16px;
         font-weight: bold;
-        margin: 15px 0 0 0;
+        margin-top: 4px;
         padding: 24px 32px;
         transition: 0.3s;
         width: 100%;
@@ -96,20 +100,16 @@
     </style>
   </head>
   <body>
-    <section id="main_frame">
+    <main id="main_frame">
       <form action="https://github.com/">
-        <label>Username</label><br />
-        <input type="text" placeholder="Pick a username" /><br />
+        <label for="username">Username</label><br />
+        <input type="text" name="username" placeholder="Pick a username" /><br />
 
-        <label>Email</label><br />
-        <input type="text" placeholder="you@example.com" /><br />
+        <label for="email">Email</label><br />
+        <input type="text" name="email" placeholder="you@example.com" /><br />
 
-        <label>Password</label><br />
-        <input
-          type="password"
-          placeholder="Create a password"
-          style="margin-bottom: 0px;"
-        />
+        <label for="pass">Password</label><br />
+        <input type="password" name="pass" placeholder="Create a password" />
 
         <p>
           Make sure it's more than 15 characters, or at least 8 characters,
@@ -129,6 +129,6 @@
           >. We'll occasionally send you account related emails.
         </p>
       </form>
-    </section>
+    </main>
   </body>
 </html>
