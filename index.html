@@ -1,134 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="icon" type="image/png" href="icon.png"/>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+  <head>
+    <link rel="icon" type="image/png" href="icon.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
     <title>The world's leading software development platform · GitHub</title>
 
     <style>
-        body{
-            color: #717A83;
-            background-color: #2b3137;
-            font-family: Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-        }
+      body {
+        color: #717a83;
+        background-color: #2b3137;
+        font-family: Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji,
+          Segoe UI Emoji, Segoe UI Symbol;
+      }
 
-        #main_frame{
-            background-color: #FAFBFC;
-            border-radius: 4px;
-            height: 494px;
-            margin: 30px auto auto;
-            padding: 20px 0px 0px;
-            width: 295px;
-        }
+      #main_frame {
+        background-color: #fafbfc;
+        border-radius: 4px;
+        height: 494px;
+        margin: 30px auto auto;
+        padding: 20px 0px 0px;
+        width: 295px;
+      }
 
-        form{
-            padding:0 15px;
-        }
+      form {
+        padding: 0 15px;
+      }
 
-        label{
-            color:#616971;
-            font-size: 14px;
-            line-height: 1.5;
-            text-align: left;
-        }
+      label {
+        color: #616971;
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: left;
+      }
 
-        input{
-            color: #24292e;
-            border: 1px solid #d1d5da;
-            border-radius: 5px; 
-            background-color: #FAFBFC;
-            padding: 14px 10px;      
-            margin: 5px 0 13px 0;
-            font-size: 16px;
-            width: 92%;                  
-        }
+      input {
+        color: #24292e;
+        border: 1px solid #d1d5da;
+        border-radius: 5px;
+        background-color: #fafbfc;
+        padding: 14px 10px;
+        margin: 5px 0 13px 0;
+        font-size: 16px;
+        width: 92%;
+      }
 
-        input:focus{
-            border-color:#2188ff;
-            outline: none;
-        }
+      input:focus {
+        border-color: #2188ff;
+        outline: none;
+      }
 
-        input::placeholder {
-            opacity: 0.5;
-        }   
+      input::placeholder {
+        opacity: 0.5;
+      }
 
-        a{
-            color: #3886DE;
-            text-decoration: none;
-        }
+      a {
+        color: #3886de;
+        text-decoration: none;
+      }
 
-        p{
-            font-size: 12px;
-            margin: 7px 0 0 0;
-            text-align: justify;
+      p {
+        font-size: 12px;
+        margin: 7px 0 0 0;
+        text-align: justify;
+      }
 
-        }
+      .text_center {
+        text-align: center;
+      }
 
-        .text_center{
-            text-align: center;
-        }
+      .main_button {
+        border: none;
+        border-radius: 3px;
+        background-color: #2ebc4f;
+        color: white;
+        cursor: pointer;
+        display: block;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 15px 0 0 0;
+        padding: 24px 32px;
+        transition: 0.3s;
+        width: 100%;
+      }
 
-        .main_button{
-            border: none;
-            border-radius: 3px;
-            background-color: #2ebc4f;
-            color: white;
-            cursor: pointer;
-            display: block;
-            font-size: 16px;
-            font-weight:bold;
-            margin: 15px 0 0 0;
-            padding: 24px 32px;
-            transition: 0.3s;
-            width: 100%;
-        }
+      .main_button:hover {
+        background-color: #28a745;
+      }
 
-        .main_button:hover{
-            background-color: #28a745;
-        }
-
-        .main_button:focus{
-            outline: none;
-        }
-
-
-      
-
+      .main_button:focus {
+        outline: none;
+      }
     </style>
+  </head>
+  <body>
+    <section id="main_frame">
+      <form action="https://github.com/">
+        <label>Username</label><br />
+        <input type="text" placeholder="Pick a username" /><br />
 
-</head>
-<body>
-    <section id="main_frame" >
-        <form action="https://github.com/">
-            <label>Username</label><br>
-            <input type= "text" placeholder="Pick a username"><br>
-            
-            <label>Email</label><br>
-            <input type= "text" placeholder="you@example.com"><br>
+        <label>Email</label><br />
+        <input type="text" placeholder="you@example.com" /><br />
 
-            <label>Password</label><br>
-            <input type= "password" placeholder="Create a password" style="margin-bottom: 0px;">
-            
-            <p>
-                Make sure it's more than 15 characters, or at least 8 characters,
-                including a number, and a lowercase letter.
-            </p>
+        <label>Password</label><br />
+        <input
+          type="password"
+          placeholder="Create a password"
+          style="margin-bottom: 0px;"
+        />
 
-            <button class="main_button">Sign up for GitHub</button>
+        <p>
+          Make sure it's more than 15 characters, or at least 8 characters,
+          including a number, and a lowercase letter.
+        </p>
 
-            <p class="text_center">
-                By clicking "Sign up for GitHub", you agree to our 
-                <a href="https://help.github.com/articles/github-terms-of-service/">terms of service</a> 
-                and
-                <a href="https://help.github.com/articles/github-privacy-statement/">privacy statement</a>.
-                We'll occasionally send you account related emails.
-            </p>
-        </form>
-    
+        <button class="main_button">Sign up for GitHub</button>
+
+        <p class="text_center">
+          By clicking "Sign up for GitHub", you agree to our
+          <a href="https://help.github.com/articles/github-terms-of-service/"
+            >terms of service</a
+          >
+          and
+          <a href="https://help.github.com/articles/github-privacy-statement/"
+            >privacy statement</a
+          >. We'll occasionally send you account related emails.
+        </p>
+      </form>
     </section>
-    
-</body>
+  </body>
 </html>
